@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message User { 
+  int64 id = 1;
+  UserType type = 2;
+
+  enum UserType {
+    USERTYPE_UNSPECIFIED = 0;
+    STUDENT = 1;
+    AGENT = 2;
+    COMPANY = 3;
+  }
+}
+
+
